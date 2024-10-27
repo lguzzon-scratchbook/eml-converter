@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "eml-converter"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+beautifulsoup4 = "^4.12.3"
+reportlab = "^4.2.5"
+html5lib = "^1.1"
+markdown = "^3.7"
+tabulate = "^0.9.0"
+xhtml2pdf = "^0.2.16"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
