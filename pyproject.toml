@@ -18,3 +18,11 @@ xhtml2pdf = "^0.2.16"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools]
+packages = ["eml-converter"] # Assuming your package name is eml-converter
+
+[tool.setuptools.entry-points]
+console_scripts = [
+    "eml-converter = src.eml-converter:main",
+]
