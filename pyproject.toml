@@ -1,4 +1,5 @@
 [tool.poetry]
+packages = ["eml-converter"] # Assuming your package name is eml-converter
 name = "eml-converter"
 version = "0.1.0"
 description = ""
@@ -17,12 +18,9 @@ xhtml2pdf = "^0.2.16"
 
 [build-system]
 requires = ["poetry-core"]
-build-backend = "setuptools.build_meta"
+build-backend = "poetry.core.masonry.api"
 
-[tool.setuptools]
-packages = ["eml-converter"] # Assuming your package name is eml-converter
-
-[tool.setuptools.entry-points]
+[tool.poetry.entry-points]
 console_scripts = [
     "eml-converter = src.eml-converter:main",
 ]
